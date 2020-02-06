@@ -7,7 +7,7 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation"
-					:class="{ 'menu-is-expanded': isOpen }" href="javascript:;" @click="toggleMenu">
+					:class="{ 'menu-is-expanded': isOpen,  'collapsed': !isOpen}" href="javascript:;" @click="toggleMenu">
 			<span class="menu-icon__circle">
 			</span>
 				<span class="menu-icon">
@@ -18,18 +18,14 @@
 			</button>
 			<div class="collapse navbar-collapse" :class="{ 'show': isOpen }" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-lg-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="javascript:;">About Us
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Careers</a></li>					
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Programs</a></li>
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Events</a></li>
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Team</a></li>					
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Partners</a></li>
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Forum</a></li>
-					<li class="nav-item">
+					<li class="nav-item active" @click="gotoPage($event)"><a class="nav-link" href="javascript:;">About Us</a></li>
+					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Careers</a></li>					
+					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Programs</a></li>
+					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Events</a></li>
+					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Team</a></li>					
+					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Partners</a></li>
+					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Forum</a></li>
+					<li class="nav-item" @click="gotoPage($event)">
 						<a class="nav-link" href="javascript:;">Blog</a>
 					</li>
 				</ul>
@@ -62,7 +58,8 @@ export default {
 		...mapMutations({
 			toggleMenu: 'navigation/toggleMenu'
 		}),
-		onClick () {
+		gotoPage (e) {
+			console.log(e.target);
 			this.toggleMenu(false);
 		},
 	},
