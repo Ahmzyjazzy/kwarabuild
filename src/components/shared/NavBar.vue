@@ -22,17 +22,18 @@
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Partners</a></li>
+					<li class="nav-item"><a href="javascript:;" class="nav-link">Careers</a></li>					
+					<li class="nav-item"><a href="javascript:;" class="nav-link">Programs</a></li>
 					<li class="nav-item"><a href="javascript:;" class="nav-link">Events</a></li>
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Careers</a></li>
+					<li class="nav-item"><a href="javascript:;" class="nav-link">Team</a></li>					
+					<li class="nav-item"><a href="javascript:;" class="nav-link">Partners</a></li>
 					<li class="nav-item"><a href="javascript:;" class="nav-link">Forum</a></li>
-					<li class="nav-item"><a href="javascript:;" class="nav-link">Team</a></li>
 					<li class="nav-item">
 						<a class="nav-link" href="javascript:;">Blog</a>
 					</li>
 				</ul>
 				<div class="custom-menu__right">
-					<a href="javascript:;" class="event-btn">Learning Community</a>
+					<a href="javascript:;" class="event-btn">Become Ambassador</a>
 				</div>
 			</div>
 		</div>
