@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<NavBar/>
-			<nuxt />
+		<nuxt />
 		<Footer/>
 		<a href="#" id="scroll" style="display: none;"><i class="fas fa-angle-up"></i></a>
 	</div>

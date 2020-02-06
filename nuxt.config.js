@@ -87,7 +87,7 @@ module.exports = {
   pwa: {
 	workbox: {
 	  /* workbox options */
-	//   autoRegister: false,
+	  autoRegister: false,
 	}
   },
   srcDir: 'src',

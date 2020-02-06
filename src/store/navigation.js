@@ -1,5 +1,5 @@
 export const state = () => ({
-    drawer: false,
+    menu: false,
     items: [],
 	currentPage: {}
 })
@@ -9,7 +9,7 @@ export const getters = {
 }
 
 export const mutations = {
-    toggleDrawer: state => (state.drawer = !state.drawer)
+    toggleMenu: state => (state.menu = !state.menu)
 }
 
 export const actions = {
