@@ -24,7 +24,7 @@
 									We always have sessions to keep you updated and mastering the latest trends in modern
 									Android development.</p>
 							</div>
-							<a href="javascript:;" class="hero-button" target="_blank" rel="noreferrer">Explore &nbsp; &nbsp;<i class="fas fa-external-link-alt"></i></a>
+							<a href="javascript:;" class="hero-button">Explore &nbsp; &nbsp;<i class="fas fa-external-link-alt"></i></a>
 						</div>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 									coding experience.
 								</p>
 							</div>
-							<a href="javascript:;" class="hero-button" target="_blank" rel="noreferrer">Explore &nbsp; &nbsp;<i class="fas fa-external-link-alt"></i></a>
+							<a href="javascript:;" class="hero-button">Explore &nbsp; &nbsp;<i class="fas fa-external-link-alt"></i></a>
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -73,7 +73,7 @@
 									innovation and prompt rise of cloud-native applications to
 									bridges gaps between data, insight, and action.</p>
 							</div>
-							<a href="javascript:;" class="hero-button" target="_blank" rel="noreferrer">Explore &nbsp; &nbsp;<i class="fas fa-external-link-alt"></i></a>
+							<a href="javascript:;" class="hero-button">Explore &nbsp; &nbsp;<i class="fas fa-external-link-alt"></i></a>
 						</div>
 					</div>
 				</div>
@@ -92,7 +92,7 @@
 									automatically learn and improve from experience without being explicitly programmed.
 								</p>
 							</div>
-							<a href="javascript:;" class="hero-button" target="_blank" rel="noreferrer">Explore &nbsp; &nbsp;<i class="fas fa-external-link-alt"></i></a>
+							<a href="javascript:;" class="hero-button">Explore &nbsp; &nbsp;<i class="fas fa-external-link-alt"></i></a>
 						</div>
 					</div>
 					<div class="col-sm-6">
