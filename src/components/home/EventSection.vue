@@ -8,16 +8,16 @@
 
 			<div class="workshops-type-switch">
 				<ul class="nav nav-pills justify-content-center js-tabs">
-					<li class="nav-item">
-						<a class="nav-link active" href="#upcoming">Upcoming Events</a>
+					<li class="nav-item" @click="setTab($event,'isUpcoming')">
+						<a class="nav-link" :class="{ 'active': isUpcoming,  'show': isUpcoming}" href="#upcoming">Upcoming Events</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#past">Past Events</a>
+					<li class="nav-item" @click="setTab($event,'isPast')">
+						<a class="nav-link" :class="{ 'active': isPast,  'show': isPast}" href="#past">Past Events</a>
 					</li>
 				</ul>
 			</div>
 			<div class="tab-content">
-				<div class="tab-pane active" id="upcoming" role="tabpanel" aria-labelledby="upcoming">
+				<div class="tab-pane" :class="{ 'active': isUpcoming,  'show': isUpcoming}" id="upcoming" role="tabpanel" aria-labelledby="upcoming">
 					<div class="row">
 						<div class="col-md-4 col-12">
 							<div class="card event-card">
@@ -99,7 +99,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tab-pane" id="past" role="tabpanel" aria-labelledby="past">
+				<div class="tab-pane" id="past" :class="{ 'active': isPast,  'show': isPast}" role="tabpanel" aria-labelledby="past">
 
 					<section id="hi" class="section-spacer bg-very__gray">
 						<div class="container">
@@ -180,6 +180,7 @@
 							</div>
 						</div>
 					</section>
+
 					<section class="section-spacer">
 						<div class="container">
 							<div class="row flex-column-reverse flex-sm-row align-items-cengit ter">
@@ -206,6 +207,7 @@
 							</div>
 						</div>
 					</section>
+
 				</div>
 			</div>
 		</div>
@@ -220,14 +222,20 @@ export default {
 	},
 	data() {
         return {
-            
+			isUpcoming: true,
+			isPast: false,
         }
 	},
 	computed: {
 
 	},
 	methods: {
-
+		setTab(e,type){
+			e.preventDefault();
+			this.isUpcoming = false;
+			this.isPast = false;
+			this[type] = true;
+		}
 	},
 	mounted(){
 

@@ -50,7 +50,28 @@ export default {
 
 	},
 	mounted(){
+		//init all jquery plugins
 
+		/*====================================================*/
+		/* team SLIDER                                 */
+		/*====================================================*/
+
+		//initialize new hammer instance and swipe functionalities
+		var slider = new Hammer.Manager(document.getElementById('carouselExample'), { inputClass: Hammer.TouchInput});
+		var Swipe = new Hammer.Swipe({ direction: Hammer.DIRECTION_HORIZONTAL});
+		slider.add(Swipe);
+
+		//implement swipe action on the carousel
+		slider.on('swiperight swipeleft', function(e) {
+			e.preventDefault();
+			if (e.type == 'swiperight') {
+				$(this).carousel('prev');
+				checkitem();
+			} else {
+				$(this).carousel('next');
+				checkitem();
+			}
+		});
 	}
 }
 </script>
