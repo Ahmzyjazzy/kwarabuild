@@ -2,7 +2,7 @@
 
 > Community website for kwarabuild
 
-Visit [Kwarabuild](https://kwarabuild.herokuapp.com).
+Visit live demo at [Kwarabuild Official](https://kwarabuild.herokuapp.com).
 
 ## Build Setup
 
