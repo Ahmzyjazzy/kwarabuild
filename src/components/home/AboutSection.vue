@@ -1,5 +1,5 @@
 <template>
-	<section id="overview" class="section-spacer">
+	<section id="about" class="section-spacer">
 		<div class="container">
 
 			<div class="row">

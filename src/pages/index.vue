@@ -4,6 +4,8 @@
 
 		<AboutSection/>
 
+		<CareerSection/>
+
 		<ProgramSection/>
 
 		<EventSection/>

@@ -7,7 +7,7 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation"
-					:class="{ 'menu-is-expanded': isOpen,  'collapsed': !isOpen}" href="javascript:;" @click="toggleMenu">
+					:class="{ 'menu-is-expanded': isOpen,  'collapsed': !isOpen}" @click="toggleMenu">
 			<span class="menu-icon__circle">
 			</span>
 				<span class="menu-icon">
@@ -18,12 +18,12 @@
 			</button>
 			<div class="collapse navbar-collapse" :class="{ 'show': isOpen }" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-lg-auto">
-					<li class="nav-item active" @click="gotoPage($event)"><a class="nav-link" href="javascript:;">About Us</a></li>
-					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Careers</a></li>					
-					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Programs</a></li>
-					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Events</a></li>
-					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Team</a></li>					
-					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Partners</a></li>
+					<li class="nav-item active" @click="scrollToContent($event)"><a class="nav-link" href="#about">About Us</a></li>
+					<li class="nav-item" @click="scrollToContent($event)"><a href="#careers" class="nav-link">Careers</a></li>					
+					<li class="nav-item" @click="scrollToContent($event)"><a href="#programs" class="nav-link">Programs</a></li>
+					<li class="nav-item" @click="scrollToContent($event)"><a href="#events" class="nav-link">Events</a></li>
+					<li class="nav-item" @click="scrollToContent($event)"><a href="#team" class="nav-link">Team</a></li>					
+					<li class="nav-item" @click="scrollToContent($event)"><a href="#faqs" class="nav-link">FAQs</a></li>
 					<li class="nav-item" @click="gotoPage($event)"><a href="javascript:;" class="nav-link">Forum</a></li>
 					<li class="nav-item" @click="gotoPage($event)">
 						<a class="nav-link" href="javascript:;">Blog</a>
@@ -59,33 +59,20 @@ export default {
 			toggleMenu: 'navigation/toggleMenu'
 		}),
 		gotoPage (e) {
-			console.log(e.target);
 			this.toggleMenu(false);
 		},
+		scrollToContent(e){
+			e.preventDefault();
+			this.toggleMenu(false);
+			var $anchor = e.target;
+			$('html, body').stop().animate({
+				scrollTop: ($($anchor.getAttribute('href')).offset().top - 50)
+			}, 1250, 'easeInOutExpo');
+			event.preventDefault();
+		}
 	},
 	mounted(){
-		// var navBar = $('.custom-menu'),
-		// navbarLinks = $('.custom-menu .nav-link');
-	
-		// $(window).on('scroll', function() {
-		// 	if ($(this).scrollTop() > 50) {
-		// 	$(navBar).addClass('navbar-is-sticky');
-		// 	} else {
-		// 	$(navBar).removeClass('navbar-is-sticky');
-		// 	}
-		// });
 		
-		// $('.navbar-toggler').on('click', function(e) {
-		// 	$(this).toggleClass('menu-is-expanded');
-		// });
-
-		// $(document).on('click', '.navbar-collapse.show', function(e) {
-		// 	if ($(e.target).is('a')) {
-		// 	$(this).collapse('hide');
-		// 	$('.navbar-toggler').toggleClass('menu-is-expanded');
-		// 	// $('.Menu-Icon--Circle').css('transform', 'translateX(-50%) translateY(-50%) scale(1)');
-		// 	}
-		// });
 	}
 }
 </script>

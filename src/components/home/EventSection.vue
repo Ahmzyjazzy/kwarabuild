@@ -1,5 +1,5 @@
 <template>
-	<section id="workshops" class="section-spacer workshops-section bg-very__gray">
+	<section id="events" class="section-spacer workshops-section bg-very__gray">
 		<div class="container">
 			<header class="section-header text-center">
 				<h2 class="section-title">Events & Workshops</h2>
