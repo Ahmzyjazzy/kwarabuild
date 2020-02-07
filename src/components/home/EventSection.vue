@@ -107,7 +107,7 @@
 								<div class="col-sm-6">
 									<div class="feature-list-image">
 										<iframe
-												data-urllink="https://docs.google.com/presentation/d/e/2PACX-1vSubYcbqWaNFgVUDQ14VYLf_4RFiaVeFl-Tz6ryS_YAuYmP9xhdAUrV0_V5GpeHHenACAIwl8zwTZ3z/embed?start=false&loop=true&delayms=3000"
+												src="https://docs.google.com/presentation/d/e/2PACX-1vSubYcbqWaNFgVUDQ14VYLf_4RFiaVeFl-Tz6ryS_YAuYmP9xhdAUrV0_V5GpeHHenACAIwl8zwTZ3z/embed?start=false&loop=true&delayms=3000"
 												frameborder="0" width="480" height="299" allowfullscreen="true"
 												mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 									</div>
@@ -145,7 +145,7 @@
 								</div>
 								<div class="col-sm-6">
 									<div class="feature-list-image">
-										<iframe data-urllink="https://docs.google.com/presentation/d/e/2PACX-1vQw37yOddaGU-XhgoHwubXadUTEgnxQ0iqT6eHbBssRnP8UzplK-vkdL_5aKl3aiTKVjMkNMC_fRCt3/embed?start=false&loop=true&delayms=5000"
+										<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQw37yOddaGU-XhgoHwubXadUTEgnxQ0iqT6eHbBssRnP8UzplK-vkdL_5aKl3aiTKVjMkNMC_fRCt3/embed?start=false&loop=true&delayms=5000"
 												frameborder="0" width="480" height="299" allowfullscreen="true"
 												mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 									</div>
@@ -159,7 +159,7 @@
 							<div class="row align-items-center">
 								<div class="col-sm-6">
 									<div class="feature-list-image">
-										<iframe data-urllink="https://docs.google.com/presentation/d/e/2PACX-1vQcG84BsN5LAUmvkvEUwK2h1euvoW6PZaSl4CnJfybQx0xgB6XbQTECqo4H1M56axzqzDBqJpPVrbeL/embed?start=false&loop=true&delayms=30000"
+										<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQcG84BsN5LAUmvkvEUwK2h1euvoW6PZaSl4CnJfybQx0xgB6XbQTECqo4H1M56axzqzDBqJpPVrbeL/embed?start=false&loop=true&delayms=30000"
 												frameborder="0" width="480" height="299" allowfullscreen="true"
 												mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 									</div>
@@ -200,7 +200,7 @@
 								<div class="col-sm-6">
 									<div class="feature-list-image">
 										<iframe width="500" height="274"
-												data-urllink="https://www.youtube.com/embed/AAin71VkbzQ"
+												src="https://www.youtube.com/embed/AAin71VkbzQ"
 												frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 									</div>
 								</div>
@@ -238,7 +238,6 @@ export default {
 		}
 	},
 	mounted(){
-
 	}
 }
 </script>

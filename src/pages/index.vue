@@ -50,7 +50,27 @@ export default {
 
 	},
 	mounted(){
-		//init all jquery plugins
+
+		let navBar = $('.custom-menu');
+		$(window).on('scroll', function() {
+			if ($(this).scrollTop() > 50) {
+			$(navBar).addClass('navbar-is-sticky');
+			} else {
+			$(navBar).removeClass('navbar-is-sticky');
+			}
+		});
+
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('#scroll').fadeIn();
+			} else {
+				$('#scroll').fadeOut();
+			}
+		});
+		$('#scroll').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
+		});
 
 		/*====================================================*/
 		/* team SLIDER                                 */
@@ -63,6 +83,7 @@ export default {
 
 		//implement swipe action on the carousel
 		slider.on('swiperight swipeleft', function(e) {
+			console.log(slider);
 			e.preventDefault();
 			if (e.type == 'swiperight') {
 				$(this).carousel('prev');
@@ -72,6 +93,27 @@ export default {
 				checkitem();
 			}
 		});
+
+		$('#carouselExample').on('slide.bs.carousel', function (e) {
+			var $e = $(e.relatedTarget);
+			var idx = $e.index();
+			var itemsPerSlide = 3;
+			var totalItems = $('.carousel-item').length;
+
+			if (idx >= totalItems-(itemsPerSlide-1)) {
+				var it = itemsPerSlide - (totalItems - idx);
+				for (var i=0; i<it; i++) {
+					// append slides to end
+					if (e.direction=="left") {
+						$('.carousel-item').eq(i).appendTo('.carousel-inner');
+					}
+					else {
+						$('.carousel-item').eq(0).appendTo('.carousel-inner');
+					}
+				}
+			}
+		});
+
 	}
 }
 </script>
