@@ -2,7 +2,8 @@
 	<nav class="navbar navbar-expand-lg fixed-top custom-menu custom-menu__light">
 		<div class="container">
 			<a class="navbar-brand">
-				<img src="~/assets/images/icon.png" height="40" alt="DSC icon">
+				<img src="~/assets/images/icon.png" height="40" alt="DSC icon" v-if="!isOpen">
+				<img src="~/assets/images/icon-white.png" height="40" alt="DSC icon" v-else>	
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent"
